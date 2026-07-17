@@ -1,0 +1,45 @@
+DROP TABLE IF EXISTS games;
+
+CREATE TABLE games (
+    game_id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL,
+    genre TEXT NOT NULL,
+    platform TEXT NOT NULL,
+    publisher TEXT NOT NULL,
+    release_year INTEGER,
+    rating INTEGER,
+    global_sales_million REAL,
+    price_usd REAL
+);
+
+INSERT INTO games VALUES
+(1,  'GTA V',                 'Action',      'PS4',     'Rockstar', 2013, 97, 190.0, 29.99),
+(2,  'Minecraft',            'Sandbox',     'PC',      'Mojang',    2011, 93, 300.0, 26.95),
+(3,  'The Witcher 3',        'RPG',         'PC',      'CDPR',     2015, 95, 50.0, 39.99),
+(4,  'Cyberpunk 2077',       'RPG',         'PC',      'CDPR',     2020, 86, 25.0, 29.99),
+(5,  'Red Dead Redemption 2','Action',      'PS4',     'Rockstar', 2018, 96, 65.0, 39.99),
+(6,  'FIFA 23',              'Sports',      'PS5',     'EA',       2022, 76, 20.0, 49.99),
+(7,  'Call of Duty: MW',     'Shooter',     'PS4',     'Activision',2019, 84, 30.0, 39.99),
+(8,  'Elden Ring',           'RPG',         'PC',      'FromSoft', 2022, 96, 25.0, 49.99),
+(9,  'Fortnite',             'Battle Royale','PC',     'Epic Games',2017, 88, 400.0, 0.00),
+(10, 'Among Us',             'Party',       'Mobile',  'Innersloth',2018, 85, 200.0, 4.99),
+(11, 'God of War',           'Action',      'PS4',     'Sony',     2018, 94, 23.0, 29.99),
+(12, 'Valorant',             'Shooter',     'PC',      'Riot Games',2020, 80, 120.0, 0.00),
+(13, 'League of Legends',    'MOBA',        'PC',      'Riot Games',2009, 90, 180.0, 0.00),
+(14, 'Dota 2',               'MOBA',        'PC',      'Valve',    2013, 89, 120.0, 0.00),
+(15, 'CS:GO',                'Shooter',     'PC',      'Valve',    2012, 88, 40.0, 0.00),
+(16, 'Hades',                'Roguelike',   'PC',      'Supergiant',2020, 93, 10.0, 19.99),
+(17, 'Stardew Valley',       'Simulation', 'PC',      'ConcernedApe',2016, 91, 30.0, 14.99),
+(18, 'Animal Crossing',      'Simulation', 'Switch',  'Nintendo', 2020, 90, 45.0, 49.99),
+(19, 'Zelda: BOTW',          'Adventure',  'Switch',  'Nintendo', 2017, 97, 32.0, 49.99),
+(20, 'Mario Kart 8',         'Racing',      'Switch',  'Nintendo', 2014, 92, 60.0, 49.99),
+(21, 'Apex Legends',         'Battle Royale','PC',     'EA',       2019, 89, 70.0, 0.00),
+(22, 'PUBG',                 'Battle Royale','PC',     'Krafton',  2017, 85, 75.0, 29.99),
+(23, 'Overwatch',            'Shooter',     'PC',      'Blizzard', 2016, 91, 50.0, 39.99),
+(24, 'Skyrim',               'RPG',         'PC',      'Bethesda', 2011, 94, 60.0, 29.99),
+(25, 'Terraria',             'Sandbox',     'PC',      'Re-Logic', 2011, 83, 45.0, 9.99),
+(26, 'Rocket League',        'Sports',      'PC',      'Psyonix',  2015, 86, 75.0, 0.00),
+(27, 'The Last of Us',        'Action',      'PS4',     'Sony',     2013, 95, 37.0, 29.99),
+(28, 'Horizon Zero Dawn',    'Action',      'PC',      'Sony',     2017, 89, 20.0, 39.99),
+(29, 'Genshin Impact',       'RPG',         'Mobile',  'miHoYo',   2020, 82, 120.0, 0.00),
+(30, 'Clash of Clans',       'Strategy',    'Mobile',  'Supercell',2012, 78, 200.0, 0.00);
